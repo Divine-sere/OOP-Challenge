@@ -1,6 +1,6 @@
 from pet import Pet
 
-my_pet = Pet("Navy")
+my_pet = Pet("Navy", "Dog", "Golden_Retriever")
 
 my_pet.eat()         
 my_pet.sleep()      

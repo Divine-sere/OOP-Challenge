@@ -1,6 +1,8 @@
 class Pet:
-    def __init__(self, name):
+    def __init__(self, name, animal_type, breed):
         self.name = name
+        self.animal_type = animal_type
+        self.breed = breed
         self.hunger = 5
         self.energy = 5
         self.happiness = 5
@@ -54,7 +56,7 @@ class Pet:
             print(f"{self.name} hasn't learned any tricks yet.")
         
     def get_status(self):
-        print(f"{self.name}'s Status:")
+        print(f"{self.name}'s the{self.animal_type} the {self.breed}Status:")
         print(f"Hunger: {self.hunger}")
         print(f"Energy: {self.energy}")
         print(f"Happiness: {self.happiness}")
